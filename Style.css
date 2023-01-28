@@ -85,6 +85,10 @@ body {
 
 } 
 
+.tabber{
+    display: none;
+}
+
 @media (min-width: 1200px) {
     body{
         font-size: 22px;
@@ -219,6 +223,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-height: 500px) {
+    .tabber{
+        display: block;
+    }
+
+    header{
+        height: 200vh;
+    }
+
+    .back-div{
+        height: 200vh;
+    }
 }
 
 .headertext {
@@ -444,6 +462,7 @@ header:before {
         height: auto;
     }
 }
+
 
 @media (min-width: 1300px) {
     .equipe .grid {
