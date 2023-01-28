@@ -225,7 +225,7 @@ header {
     align-items: center;
 }
 
-@media (max-height: 500px) {
+@media (max-height: 1100px) {
     .tabber{
         display: block;
     }
