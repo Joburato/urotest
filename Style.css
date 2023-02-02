@@ -415,7 +415,7 @@ header:before {
     color: rgb(144, 144, 144);
 }
 
-.equipe .grid, .areas .grid {
+.equipe .grid, .equipe .grid1, .areas .grid {
     display: grid;
     gap: 2em;
     grid-template-columns: 270px;
@@ -445,21 +445,26 @@ header:before {
     }
 }
 
-
 @media only screen and (min-width: 1300px) {
-    .equipe .grid {
+    .equipe .grid{
         grid-template-columns: repeat(5,220px);
         justify-content: center;
         align-self: center;
         justify-self: center;
     }
 
+    .equipe .grid1{
+        grid-template-columns: repeat(3,220px);
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
+    }
+
     .areas .grid {
-        grid-template-columns: repeat(4,295px);
+        grid-template-columns: repeat(5,220px);
         justify-content: center;
     }
 }
-
 
 .img-portfolio {
     width: 220px;
@@ -471,7 +476,6 @@ header:before {
 .un, .una{
     cursor: pointer;
     display: inline-block;
-    font-size: .875rem;
     font-weight: bold;text-transform: uppercase;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 
@@ -479,10 +483,12 @@ header:before {
 
 .un {
     color: #4e8e3a !important; 
+    font-size: .875rem;
 }
 
 .una {
     color: #ffffff !important;
+    font-size: 1.0rem;
 }
 
 .un::after, .una::after{
@@ -520,6 +526,13 @@ header:before {
     align-items: flex-start;
 }
 
+.areas-img{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .img-btn{
     margin: 15px;
     margin-left: 30px;
@@ -532,7 +545,7 @@ header:before {
     cursor: pointer;
 }
 
-.img-pagina {
+.img-areas2, .img-pagina {
     margin-left: 15px;
     width: 90%;
     height: 130%;
@@ -540,7 +553,29 @@ header:before {
     object-fit:cover;
 }
 
-.equipe-folder{
+.obs{
+    display: none;
+}
+
+.areas-btn{
+    position: relative;
+    bottom: -200px;
+    right: -300px;
+    color: white;
+    background-color:#4e8e3a;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1.1em;
+    width: 300px;
+    padding: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+}
+
+.equipe-folder, .areas-folder{
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -580,16 +615,53 @@ header:before {
 }
 
 .areas{
+    width: 100vw;
     background-image: url("img/fundo_areas.png");
     object-fit: contain;
     background-color: #4e8e3a;
 }
 
+@media only screen and (orientation: landscape){
+    .areas{
+        position: relative;
+        left: -2%;
+        width: 101vw;
+    }
+    .ban{
+        position: absolute;
+        margin-left: 37.8vw;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (orientation: portrait){
+    .ban1{
+        display: none;
+    }
+}
+
 .img-areas {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     object-fit:cover;
+    border-radius: 25px;
+}
+
+.areas-div{
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+}
+
+.areas-div:hover{
+   background-color: rgba(255, 255, 255, 0.31);
+   transition: background-color 0.5s;
 }
 
 .contato{
@@ -633,7 +705,7 @@ header:before {
     filter: invert(46%) sepia(25%) saturate(1088%) hue-rotate(61deg) brightness(99%) contrast(82%);
     }
 
-    .img-pagina {
+    .img-areas2, .img-pagina {
         margin-left: -55px;
         width: 220px;
         height: 300px;
@@ -662,6 +734,11 @@ header:before {
         text-align: left!important;
     }
 
+    .equipes .benny{
+        text-align: center!important;
+        font-size: 1.1em;
+    }
+
     .br1{
         display: none;
     }
@@ -677,6 +754,28 @@ header:before {
         margin-top: 0px !important;
         font-size: 20px;
         line-height: 1.4;
+    }
+
+    .areas-btn{
+        position:static;
+        bottom: 0;
+        right: 0;
+        color: white;
+        background-color:#4e8e3a;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        font-size: 1.1em;
+        width: 200px;
+        padding: 15px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 25px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .obs{
+        display:block;
     }
 }
 
@@ -707,9 +806,53 @@ header:before {
         grid-template-columns: repeat(5,220px);
         justify-content: center;
     }
+
+    .areas-folder{
+        width: 60%;
+        position: relative;
+        left: 70px;
+    }
+
+    .img-areas2 {
+        margin-left: 15px;
+        width: 110%;
+        height: 110%;
+        padding: 15px;
+        object-fit:cover;
+        border-radius: 50px;
+    }
+
+    .equipe-folder .benny{
+        position: relative;
+        left: 70px;
+        top: 70px;
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (max-height: 500px){
+
+    .areas-btn{
+        position:static;
+        bottom: 0;
+        right: 0;
+        color: white;
+        background-color:#4e8e3a;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        font-size: 1.1em;
+        width: 200px;
+        padding: 15px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 25px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .obs{
+        display:block;
+    }
 
     header{
         height: 200vh;
@@ -730,7 +873,7 @@ header:before {
         filter: invert(46%) sepia(25%) saturate(1088%) hue-rotate(61deg) brightness(99%) contrast(82%);
     }
     
-    .img-pagina {
+    .img-areas2, .img-pagina {
         margin-left: 0px;
         width: 80%;
         height: 130%;
@@ -746,6 +889,14 @@ header:before {
     
     .equipes p{
         font-size: 0.70em;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #666666 !important;
+    }
+
+    .equipes .benny{
+        font-size: 1.1em;
+        margin-top: 50px;
         font-weight: 400;
         line-height: 1.5;
         color: #666666 !important;
