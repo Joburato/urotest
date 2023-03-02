@@ -14,6 +14,17 @@
 
 <body>
 
+  <div class="social">
+    <figure>
+      <img class="socialbtn" src="img/whats.png" alt="WhatsApp" onclick="window.open('url do site')">
+    </figure>
+    
+    <figure>
+      <img class="socialbtn" src="img/insta.png" alt="Instagram" onclick="window.open('https://www.instagram.com/urogrupo/')">
+    </figure>
+     
+  </div>
+
   <h id="home"></h>
 
   <div class="back">
@@ -35,15 +46,13 @@
           <li><a class="headertext"></a></li>
           <li><a class="headertext" onClick="document.getElementById('equipe1').scrollIntoView();">Equipe</a></li>
           <li><a class="headertext"></a></li>
-          <li><a class="headertext" onClick="document.getElementById('area1').scrollIntoView();">áreas de<br>atuação</a></li>
+          <li><a class="headertext" onClick="document.getElementById('area1').scrollIntoView();">áreas de atuação</a></li>
           <li><a class="headertext"></a></li>
-          <li><a href="hospitais.html" class="headertext">hospitais<br>parceiros</a></li>
+          <li><a href="hospitais.html" class="headertext">hospitais parceiros</a></li>
           <li><a class="headertext"></a></li>
           <li><a href="#" class="headertext">Convênios</a></li>
           <li><a class="headertext"></a></li>
-          <li><a href="#" class="headertext">agendamento</a></li>
-          <li><a class="headertext"></a></li>
-          <li><a href="#" class="headertext">contato</a></li>
+          <li><a href="#" class="headertext">agendamento e contato</a></li>
         </ul>
         
         
@@ -66,9 +75,7 @@
           <li><a  class="headertext"></a></li>
           <li class="usa"><a href="#" class="headertext">Convênios</a></li>
           <li><a  class="headertext"></a></li>
-          <li class="usa"><a href="#" class="headertext">agendamento</a></li>
-          <li><a  class="headertext"></a></li>
-          <li class="usa"><a href="#" class="headertext">contato</a></li>
+          <li class="usa"><a href="#" class="headertext">agendamento<br>e contato</a></li>
         </ul>
       </div>
 
@@ -678,77 +685,111 @@
 
       <div class="areas-div" onclick="exibeuro()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="Urologia geral">
+          <img class="img-areas" src="./img/urologia.png" alt="Urologia geral">
           <figcaption class="una" >Urologia geral</figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibeandro()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/andrologia.png" alt="Andrologia">
+          <figcaption class="una" >andrologia</figcaption>
         </figure>
       </div>
 
       <div class="areas-div" onclick="exibeurofem()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/serv-01.png" alt="Urologia Feminina">
+          <figcaption class="una" >Urologia Feminina</figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibeUrooncologia()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/serv_oncouro.jfif" alt="Uro-oncologia">
+          <figcaption class="una" >Uro-oncologia</figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibeDoenças()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/prostata.png" alt="Doenças da próstata">
+          <figcaption class="una" >Doenças da próstata</figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibeUroneurologia()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/serv_genito.jpg" alt="Uro-neurologia">
+          <figcaption class="una" >Uro-neurologia</figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibepediátrica()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/serv_uroped.jpg" alt="Urologia pediátrica">
+          <figcaption class="una" >Urologia pediátrica</figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibeLitíase()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/litiase.png" alt="Litíase urinária ">
+          <figcaption class="una" >Litíase urinária </figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibeTransplante()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/transplante.png" alt="Transplante renal">
+          <figcaption class="una" >Transplante renal</figcaption>
         </figure>
       </div>
 
-      <div class="areas-div" onclick="exibeurofem()">
+      <div class="areas-div" onclick="exibeCirurgia()">
         <figure>
-          <img class="img-areas" src="./img/serv-01.png" alt="UROLOGIA FEMININA">
-          <figcaption class="una" >UROLOGIA FEMININA</figcaption>
+          <img class="img-areas" src="./img/cirurgia.png" alt="Cirurgia minimamente invasiva e robótica">
+          <figcaption class="una" >Cirurgia minimamente invasiva e robótica</figcaption>
         </figure>
       </div>
 
     </div>
 
-    <div id="uro" class="equipes" style="top: 12%;">
+    <div class="ban1">
+      <div class="fodder"></div>
+      <div class="fodder"></div>
+    </div>
+
+    <div class="grid1">
+
+      <h2></h2>
+      <h2>exames</h2>
+      <h2></h2>
+
+      <div class="areas-div">
+        <figure>
+          <img class="img-areas" src="./img/fluxo.png" alt="Fluxometria urinária">
+          <figcaption class="una" >Fluxometria urinária</figcaption>
+        </figure>
+      </div>
+
+      <div class="areas-div" onclick="exibeurodinâmico()">
+        <figure>
+          <img class="img-areas" src="./img/Exame urodinâmico.png" alt="Exame urodinâmico">
+          <figcaption class="una" >Exame urodinâmico</figcaption>
+        </figure>
+      </div>
+
+      <div class="areas-div">
+        <figure>
+          <img class="img-areas" src="./img/cisto.png" alt="Cistocopia">
+          <figcaption class="una">cistocopia</figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    <div id="uro" class="equipes" style="top: 200%;">
       <div class="equipe-img">
 
         <figure>
@@ -756,7 +797,7 @@
         </figure>
 
         <figure>
-          <img class="img-areas2" src="img/grossi.png" alt="Urologia geral">
+          <img class="img-areas2" src="img/urologia.png" alt="Urologia geral">
         </figure>
       </div>
 
@@ -766,7 +807,230 @@
           A urologia geral está envolvida na prevenção urológica, rastreio do câncer de próstata, tratamento de infecções sexualmente transmissíveis (ISTs) e problemas urológicos em geral.
         </p>
         <div class="obs"><h1><br><br></h1></div>
-        <button class="areas-btn" onclick="marque()">marque sua consulta</button>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="andro" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaandro()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/andrologia.png" alt="Andrologia">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          A andrologia envolve os distúrbios sexuais masculinos como disfunção erétil e ejaculação precoce, além do tratamento da infertilidade masculina, varicocele, baixa de testosterona, etc.
+        </p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="urofem" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaurofem()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/serv-01.png" alt="Urologia Feminina">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          A urologia feminina ou uroginecologia é responsável pelo tratamento de todo e qualquer distúrbio urológico feminino, especialmente da incontinência urinária feminina e prolapso genital.
+        </p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="Urooncologia" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaUrooncologia()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/serv_oncouro.jfif" alt="Uro-oncologia">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          É a subespecialidade que lida com o diagnóstico e tratamento dos tumores (benignos e malignos) dos órgãos do trato urinário (rins, ureter, bexiga) e genital masculino (próstata, testículos e pênis).
+        </p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="Doenças" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaDoenças()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/prostata.png" alt="Doenças da próstata">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          A próstata é um dos principais órgãos do sistema urinário e reprodutor masculino, pode ser acometida por crescimento benigno, câncer, inflamações, dentre outras patologias. Os homens a partir dos 45 anos devem procurar o urologista preventivamente.</p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="Uroneurologia" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaUroneurologia()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/serv_genito.jpg" alt="Uro-neurologia">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          A uro-neurologia é a subespecialidade que estuda as disfunções urinárias causadas pelas doenças neurológicas como Parkinson, AVC, Esclerose Múltipla, Trauma raquimedular, entre outras.</p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="pediátrica" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechapediátrica()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/serv_uroped.jpg" alt="Urologia pediátrica">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          A urologia infantil é a subespecialidade que diagnostica e trata os problemas urológicos da infância como fimose, hipospádia, criptorquidia, entre outros.</p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="Litíase" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaLitíase()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/litiase.png" alt="Litíase urinária ">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          O cálculo renal (pedra no rim) é um problema de saúde muito comum, tratado cirurgicamente pelo urologista, de forma endourológica, isto é, sem cortes na pele.</p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="Transplante" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaTransplante()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/transplante.png" alt="Transplante renal">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          A cirurgia de transplante renal é realizada pelo urologista, com acompanhamento pré e pós-operatório de equipe multidisciplinar liderada pelo médico nefrologista.</p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="Cirurgia" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaCirurgia()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/cirurgia.png" alt="Cirurgia minimamente invasiva e robótica">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br><br></h1>
+        <p class="benny">
+          A evolução da medicina é constante, com muitos procedimentos cirúrgicos hoje em dia sendo realizados por via videolaparoscópica e robótica. Nossos urologistas são verdadeiros entusiastas da cirurgia minimamente invasiva.</p>
+        <div class="obs"><h1><br><br></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque sua consulta</button>
+      </div>
+      
+    </div>
+
+    <div id="urodinâmico" class="equipes" style="top: 200%;">
+      <div class="equipe-img">
+
+        <figure>
+          <img class="img-btn" src="img/xmark-solid.png" onclick="fechaurodinâmico()">
+        </figure>
+
+        <figure>
+          <img class="img-areas2" src="img/Exame urodinâmico.png" alt="Exame urodinâmico">
+        </figure>
+      </div>
+
+      <div class="equipe-folder">
+        <h1><br></h1>
+        <p class="benny">
+          O estudo urodinâmico é considerado o exame padrão-ouro na avaliação funcional do trato urinário inferior (bexiga e uretra), esse exame é realizado pelo médico urologista e está indicado principalmente nos casos de disfunções miccionais, incontinência urinária, prolapso de órgãos genitais, entre outras.</p>
+        <div class="obs"><h1></h1></div>
+        <button class="areas-btn" onClick="marcar()">marque seu<br>exame</button>
       </div>
       
     </div>
@@ -795,8 +1059,10 @@
         
         <img class="img-portfolio" src="./img/hospital_botao-hospital-LIGA.png" alt="Liga contra o Câncer" onclick="window.location='https://ligacontraocancer.com.br/';">
     </div>
-
+    <h id="contato"></h>
+    <h id="contato1"></h>
   </section>
+  
   
   <section class="contato">
 

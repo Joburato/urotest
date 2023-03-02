@@ -128,3 +128,92 @@ function fechauro(){
     var div = document.getElementById("uro");
     div.style.top = "200%";
 }
+
+function exibeandro(){
+    var div = document.getElementById("andro");
+    div.style.top = "12%";
+}
+function fechaandro(){
+    var div = document.getElementById("andro");
+    div.style.top = "200%";
+}
+
+function exibeurofem(){
+    var div = document.getElementById("urofem");
+    div.style.top = "12%";
+}
+function fechaurofem(){
+    var div = document.getElementById("urofem");
+    div.style.top = "200%";
+}
+
+function exibeUrooncologia(){
+    var div = document.getElementById("Urooncologia");
+    div.style.top = "12%";
+}
+function fechaUrooncologia(){
+    var div = document.getElementById("Urooncologia");
+    div.style.top = "200%";
+}
+
+function exibeDoenças(){
+    var div = document.getElementById("Doenças");
+    div.style.top = "12%";
+}
+function fechaDoenças(){
+    var div = document.getElementById("Doenças");
+    div.style.top = "200%";
+}
+
+function exibeUroneurologia(){
+    var div = document.getElementById("Uroneurologia");
+    div.style.top = "12%";
+}
+function fechaUroneurologia(){
+    var div = document.getElementById("Uroneurologia");
+    div.style.top = "200%";
+}
+function exibepediátrica(){
+    var div = document.getElementById("pediátrica");
+    div.style.top = "12%";
+}
+function fechapediátrica(){
+    var div = document.getElementById("pediátrica");
+    div.style.top = "200%";
+}
+
+function exibeLitíase(){
+    var div = document.getElementById("Litíase");
+    div.style.top = "12%";
+}
+function fechaLitíase(){
+    var div = document.getElementById("Litíase");
+    div.style.top = "200%";
+}
+
+function exibeTransplante(){
+    var div = document.getElementById("Transplante");
+    div.style.top = "12%";
+}
+function fechaTransplante(){
+    var div = document.getElementById("Transplante");
+    div.style.top = "200%";
+}
+
+function exibeCirurgia(){
+    var div = document.getElementById("Cirurgia");
+    div.style.top = "12%";
+}
+function fechaCirurgia(){
+    var div = document.getElementById("Cirurgia");
+    div.style.top = "200%";
+}
+
+function exibeurodinâmico(){
+    var div = document.getElementById("urodinâmico");
+    div.style.top = "12%";
+}
+function fechaurodinâmico(){
+    var div = document.getElementById("urodinâmico");
+    div.style.top = "200%";
+}

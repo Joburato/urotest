@@ -415,7 +415,7 @@ header:before {
     color: rgb(144, 144, 144);
 }
 
-.equipe .grid, .equipe .grid1, .areas .grid {
+.equipe .grid, .equipe .grid1, .areas .grid, .areas .grid1{
     display: grid;
     gap: 2em;
     grid-template-columns: 270px;
@@ -463,6 +463,13 @@ header:before {
     .areas .grid {
         grid-template-columns: repeat(5,220px);
         justify-content: center;
+    }
+
+    .areas .grid1{
+        grid-template-columns: repeat(3,220px);
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
     }
 }
 
@@ -617,7 +624,7 @@ header:before {
 .areas{
     width: 100vw;
     background-image: url("img/fundo_areas.png");
-    object-fit: contain;
+    object-fit: fit;
     background-color: #4e8e3a;
 }
 
@@ -684,6 +691,10 @@ header:before {
     .contato-ctn{
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .headertext{
+        text-align: left;
     }
 
     .form{
@@ -931,5 +942,27 @@ header:before {
         
         font-size: 0.58em;
     }
+}
+
+.social{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    right: 0;
+    top: 7rem;
+    z-index: 2;
+}
+
+.socialbtn{
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    transition: height 0.2s;
+    border-radius: 5px;
+}
+
+.socialbtn:hover{
+    height: 55px;
 }
 
